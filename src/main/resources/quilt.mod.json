@@ -1,12 +1,12 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "com.example",
-		"id": "example_mod",
+		"group": "dev.waterlilly",
+		"id": "gateway",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
-			"description": "A short description of your mod.",
+			"name": "Gateway",
+			"description": "Teleport stuff between Minecraft servers",
 			"contributors": {
 				"Your name here": "Owner"
 			},
@@ -21,7 +21,7 @@
 		"entrypoints": {
 			"init": {
 				"adapter": "kotlin",
-				"value": "com.example.example_mod.ExampleMod"
+				"value": "dev.waterlilly.gateway.init.GatewayInit"
 			}
 		},
 		"depends": [
@@ -43,5 +43,5 @@
 			}
 		]
 	},
-	"mixin": "example_mod.mixins.json"
+	"mixin": "gateway.mixins.json"
 }
